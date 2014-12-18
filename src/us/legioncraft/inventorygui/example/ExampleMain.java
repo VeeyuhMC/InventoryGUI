@@ -8,8 +8,8 @@ public class ExampleMain extends JavaPlugin{
 	
 	public void onEnable(){
 		
-getCommand("invexample").setExecutor(new ExampleCommand());
-InventoryManager.getInstance().addGUI(new ExampleGUI(this), new ExampleEvent());
+      getCommand("invexample").setExecutor(new ExampleCommand());
+      InventoryManager.getInstance().addGUI(new ExampleGUI(this), new ExampleEvent());
 	}
 	
 }
