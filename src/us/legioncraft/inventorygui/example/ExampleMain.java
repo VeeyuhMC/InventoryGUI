@@ -7,7 +7,9 @@ import us.legioncraft.inventorygui.inventory.InventoryManager;
 public class ExampleMain extends JavaPlugin{
 	
 	public void onEnable(){
-		InventoryManager.getInstance().addGUI(new ExampleGUI(this), new ExampleEvent());
+		
+getCommand("invexample").setExecutor(new ExampleCommand());
+InventoryManager.getInstance().addGUI(new ExampleGUI(this), new ExampleEvent());
 	}
 	
 }
