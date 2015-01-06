@@ -16,6 +16,8 @@ public class GUI {
 		this.inv = inv;
 		this.slots = slots;
 		this.items = items;
+		
+		createInventory();
 	}
 	
 	public String getName(){
@@ -35,9 +37,8 @@ public class GUI {
 	}
 	
 	public void createInvntory(){
-		for(int i = 0; i >= slots; i++){
-			inv.setItem(i, items.get(i));
-		}
+		Bukkit.getServer().createInventory(null, slots, name);
+		addItems();
 	}
 		
 	public void addItems(){
