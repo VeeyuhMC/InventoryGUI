@@ -15,6 +15,7 @@ public class ExampleCommand implements CommandExecutor{
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
+		plugin.getServer();
 		if(sender instanceof Player){
 			Player player = (Player) sender;
 			InventoryManager im = InventoryManager.getInstance();
